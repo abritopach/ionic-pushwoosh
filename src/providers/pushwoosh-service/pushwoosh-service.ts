@@ -18,6 +18,8 @@ export class PushwooshService {
 
     constructor(public platform : Platform){
 
+        console.log("Constructor");
+
         this.platform.ready().then(() => {
             console.log("Platform ready");
             if (this.platform.is('ios')) {
@@ -29,7 +31,7 @@ export class PushwooshService {
                     this.initAndroid();
                 }
                 else {
-                    console.log("PushwooshService init: No compatible platform available.  Skipping init.)");
+                    console.log("PushwooshService init: No compatible platform available.  Skipping init.");
                     return;
                 }
             }
