@@ -4,27 +4,32 @@ Sample project that shows how to integrate Pushwoosh in Ionic.
 
 * FrontEnd: Ionic App.
 
+## Install cordova plugins
+
+    * pushwoosh-cordova-plugin
+    * cordova-plugin-whitelist
+
 ## Configuration
 
-    1) [Register in Pushwoosh](https://go.pushwoosh.com/register)
-    2) Login in Pushwoosh
-    3) Create new App
-        - Enter Application title.
-        - Click Save application.
-        - Click configure in Android Platform: you need API Key and GCM Sender ID.
-    4) [Go to google developers console](https://console.developers.google.com)
-        - Create new project.
-        - Create credentials > API Key.
-    5) [FCM (former GCM) Configuration](http://docs.pushwoosh.com/docs/fcm-configuration)
-    6) Go to step 3 -> configure Android. 
-        -  In your application click on Android->Edit to change the configuration for Android application. 
-        - Copy your Firebase Cloud Messaging Token to the API Key.
-        - Copy your Sender ID to the GCM Sender ID field.
-    7) In providers/pushwoosh-service/pushwoosh-service.ts replace:
-        PUSHWOOSH_APP_ID : string = 'XXXXX-XXXXX'; // Your pushwoosh app id.
-        GOOGLE_PROJECT_NUMBER : string = 'XXXXXXXXXXXX'; // Project number from firebase.
+1) [Register in Pushwoosh](https://go.pushwoosh.com/register)
+2) [Login in Pushwoosh](https://go.pushwoosh.com/v2/login)
+3) Create new App
+    - Enter Application title.
+    - Click Save application.
+    - Click configure in Android Platform: you need API Key and GCM Sender ID.
+4) [Go to google developers console](https://console.developers.google.com)
+    - Create new project.
+    - Create credentials > API Key.
+5) [FCM (former GCM) Configuration](http://docs.pushwoosh.com/docs/fcm-configuration)
+6) Go to step 3 -> configure Android. 
+    - In your application click on Android->Edit to change the configuration for Android application. 
+    - Copy your Firebase Cloud Messaging Token to the API Key.
+    - Copy your Sender ID to the GCM Sender ID field.
+7) In providers/pushwoosh-service/pushwoosh-service.ts replace:
+    PUSHWOOSH_APP_ID : string = 'XXXXX-XXXXX'; // Your pushwoosh app id.
+    GOOGLE_PROJECT_NUMBER : string = 'XXXXXXXXXXXX'; // Project number from firebase.
         
-        with your data.
+    with your data.
 
 ## Running
 
