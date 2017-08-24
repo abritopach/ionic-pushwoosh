@@ -12,8 +12,8 @@ declare var cordova : any;
 @Injectable()
 export class PushwooshService {
 
-    PUSHWOOSH_APP_ID : string = '899A3-A0595'; // Your pushwoosh app id.
-    GOOGLE_PROJECT_NUMBER : string = '610278859930'; // Project number from firebase.
+    PUSHWOOSH_APP_ID : string = 'XXXXX-XXXXX'; // Your pushwoosh app id.
+    GOOGLE_PROJECT_NUMBER : string = 'XXXXXXXXXXXX'; // Project number from firebase.
 
     constructor(public platform : Platform){
 
